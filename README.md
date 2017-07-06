@@ -1,5 +1,3 @@
-# GRM Portal
-
 ## Building the app
 
 Portal is built with typescript language, angular framework and angular cli tools.
@@ -37,36 +35,3 @@ or
 ```
 ng serve --prod
 ```
-
-## Migrating to Angular CLI RC1.0/Angular4.1
-1. Make sure you have Node 6.9.0 or higher installed
-2. Global package
-npm uninstall -g angular-cli @angular/cli
-npm cache clean
-npm install -g @angular/cli@latest
-3. Local project package
-rmdir /s /q node_modules dist
-npm install
-
-
-## Development
-Make sure that your editor settings configured according to project .editorconfig file 
-
-Every new feature or bug fix should be covered with end to end tests.
-We use angular cli default workflow with protractor and jasmine for tests.
-To run the tests you'll need to setup and initialize protractor and selenium webdriver:
-```
-ng i -g protractor
-webdriver-manager update
-```
-
-to run all of the tests locally:
-```
-ng e2e
-```
-
-Please don't forget to run 
-```
-ng lint
-``` 
-and fix all lint errors before submitting pull request
