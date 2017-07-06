@@ -1,0 +1,54 @@
+.call-button {
+  border: none;
+  background-color: transparent;
+}
+
+$acceptZoneWidth: 55px;
+$rejectZoneWidth: 55px;
+
+.toast-accept-zone {
+  float: left;
+  width: $acceptZoneWidth;
+}
+
+.toast-reject-zone {
+  float: right;
+  width: $rejectZoneWidth;
+}
+
+.toast-info-zone {
+  display: inline-block;
+  margin-left: 5px;
+
+  width: calc(100% - 55px - 60px);
+  min-height: 50px;
+}
+
+.accept-button {
+  background-color: #bbb;
+  border-radius: 50%;
+  border-color: #bbb;
+
+  margin-top: 5px;
+
+  &.focus, &:focus, &:hover {
+    color: #17a08b;
+    text-decoration: none;
+  }
+}
+
+#toast-container > div.toast.toast-skype-call {
+    background-color: #2F96B4;
+
+    color: #ddd;
+
+    position: relative;
+    padding: 7px 15px 15px 15px;
+
+    overflow: visible;
+
+    &:hover {
+        cursor: default;
+    }
+}
+

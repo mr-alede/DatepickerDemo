@@ -1,0 +1,7 @@
+<kendo-dropdownlist  [data]="filteredData" [(value)]="model"
+    (filterChange)="handleFilter($event)"
+    [textField]="textField" [valueField]="valueField"
+    [valuePrimitive]="valuePrimitive"
+    [defaultItem]="defaultItem"
+    [filterable]="true" (selectionChange)="handleSelection($event)">
+</kendo-dropdownlist>

@@ -1,0 +1,42 @@
+<div #toastContainer id="toast-container" [style.position]="position" class="{{positionClass}}">
+    <div *ngFor="let toast of toasts" [@inOut]="animate" (@inOut.done)="onAnimationEnd($event)"
+        class="toast toast-{{toast.type}}">
+
+        <div *ngIf="!toast.callOptions" (click)="clicked(toast)">
+            <div class="toast-close-button" *ngIf="toast.config.showCloseButton" (click)="removeToast(toast)">&times;</div>
+            
+            <div *ngIf="toast.title" class="{{toast.config.titleClass || titleClass}}">{{toast.title}}</div>
+            
+            <div [ngSwitch]="toast.config.enableHTML">
+                <span *ngSwitchCase="true" [innerHTML]="sanitizer.bypassSecurityTrustHtml(toast.message)"></span>
+                <span *ngSwitchDefault class="{{toast.config.messageClass || messageClass}}">{{toast.message}}</span>
+            </div>
+        </div>
+
+        <div *ngIf="!!toast.callOptions">
+            <div class="toast-accept-zone">
+                <button class="accept-button btn btn-sm icon-primary" (click)="clicked(toast)" tooltip="Accept call">
+                    <i class="fa fa-phone fa-3x"></i>
+                </button>
+            </div>
+
+            <div class="toast-info-zone">
+                <div *ngIf="toast.title" class="{{toast.config.titleClass || titleClass}}">{{toast.title}}</div>
+                
+                <div>{{toast.callOptions.sip}}</div>
+                <div *ngIf="!!toast.callOptions.locationName">{{toast.callOptions.locationName}}</div>
+                <div *ngIf="!!toast.callOptions.laneName">{{toast.callOptions.laneName}}</div>
+            </div>
+
+            <div class="toast-reject-zone">
+                <button class="call-button" (click)="removeToast(toast)" tooltip="Reject call">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa fa-phone fa-stack-1x"></i>
+                        <i class="fa fa-ban fa-stack-2x text-danger"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>

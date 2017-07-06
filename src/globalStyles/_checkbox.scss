@@ -1,0 +1,43 @@
+.inspinia-checkbox {
+    display:none;
+}
+.inspinia-checkbox + label{
+    margin-top: 0px;
+}
+.inspinia-checkbox + label span {
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    vertical-align:middle;
+    background: url('./img/green.png') no-repeat;
+    background-position: 0 0;
+    cursor:pointer;
+}
+.inspinia-checkbox:checked + label span {
+    background-position: -48px 0;
+}
+.inspinia-checkbox + label span:hover {
+    background-position: -24px 0;
+}
+.inspinia-checkbox:checked + label span:hover {
+    background-position: -48px 0;
+}
+.inspinia-checkbox:disabled + label span{
+    background-position: -72px 0;
+    cursor: default;
+}
+.inspinia-checkbox:checked:disabled + label span{
+    background-position: -96px 0;
+}
+.inspinia-checkbox--status{
+    margin-left:1em;
+}
+
+.form-horizontal {
+    .inspinia-checkbox + label{
+        margin-top:5px;
+    }
+}

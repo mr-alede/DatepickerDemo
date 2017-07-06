@@ -1,0 +1,43 @@
+.external-link{
+	display:inline-block !important;
+}
+.external-anchor{
+	padding: 5px 10px 5px 10px !important;
+}
+.crap{
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+}
+
+.form-control--fix{
+	padding:0;
+}
+
+.ordered-list__item--position-fix{
+	margin-top:-24px;
+}
+.button__print{
+	display:none;
+}
+
+.dropdown-menu > li > a{
+  white-space: initial;
+}
+
+.fa.fa-sort-asc{
+  margin-top:5px;
+}
+//Custom grid widths
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    width:percentage($i/12);
+  }
+}
+
+/* Print button*/
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.button__print{
+		display:inline-block !important;
+	}
+}

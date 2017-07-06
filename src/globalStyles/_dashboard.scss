@@ -1,0 +1,44 @@
+.dashboard-filter{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    h5{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .umj-datepicker-input{
+      width: 120px!important;
+    }
+}
+
+.dashboard-filter-group {
+  display: inline-block;
+  margin-left: 15px;
+
+  &.group-second{
+    margin-left: 25px;
+  }
+}
+
+.dashboard-header{
+    font-size: 24px;
+    margin-top:10px;
+    font-weight: 100;
+}
+
+.dashboard-collapse{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dashboard-toggle-btn{
+    margin-top:20px;
+}
+
+.update-charts-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

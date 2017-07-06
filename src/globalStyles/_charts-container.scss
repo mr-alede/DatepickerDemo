@@ -1,0 +1,86 @@
+.charts-container{
+  padding: 0 7px 7px;
+	font-size: 12px;
+
+  .filter{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 10px 3px 10px;
+    border: 1px solid #ccc;
+    border-top: 0;
+  }
+
+	iframe{
+		flex:1;
+		position:relative;
+	}
+
+
+   .btn-search{
+       margin-top: 22px;
+   }
+
+   .btn-export{
+       margin-bottom: 5px;
+   }
+
+   .k-chart{
+       margin-bottom: 15px;
+       height: 385px;
+   }
+
+   position: relative;
+
+  .export-only {
+    visibility: hidden;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:auto;
+    height:auto;
+  }
+  .k-pdf-export.export-only {
+    visibility: visible;
+
+    // .k-chart {
+    //   position: relative;
+    // }
+  }
+}
+
+
+.chart-incidents-duration{
+  .k-chart{
+    height: 600px;
+  }
+}
+.chart-top20-locations{
+  .k-chart{
+    height: 600px;
+  }
+}
+
+
+.tooltip-color-box{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+}
+
+.tooltip-line-item{
+    text-align: left;
+}
+
+.chart-container{
+  position:relative;
+
+  .chart-export-button{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index:1;
+  }
+}

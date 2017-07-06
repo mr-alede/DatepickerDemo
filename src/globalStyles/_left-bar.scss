@@ -1,0 +1,172 @@
+.left-nav {
+    width: 230px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-nav--closed {
+    width: 60px;
+}
+
+.left-nav--closed .left-nav__link {
+    display: none;
+}
+
+.dark-nav {
+    background-color: #2f4050;
+    color: #fff;
+}
+
+.light-nav {
+    padding-top: 15px;
+    border-right: 1px solid #ccc;
+}
+
+.nav>li>a {
+    font-weight: 600;
+    padding: 14px 20px 14px 20px;
+}
+
+.nav {
+    margin-bottom: 15px;
+}
+
+.dark-nav li a {
+    color: #a7b1c2;
+}
+
+.light-nav li a {
+    color: #959595;
+}
+
+.dark-nav li.active {
+    background-color: #293846;
+    border-left: 4px solid #19aa8d;
+}
+
+.light-nav li.active {
+    background-color: #eee;
+    border-left: 5px solid #1ab394;
+}
+
+.light-nav li.active>a {
+    color: #333;
+}
+
+.dark-nav li.active>a {
+    color: #fff;
+}
+
+.dark-nav li>a:focus,
+.dark-nav li>a:hover {
+    background-color: #293846;
+    color: white;
+}
+
+.light-nav li>a:focus,
+.light-nav li>a:hover {
+    background-color: #eee;
+    color: #333;
+}
+
+.nav__second-level {
+    background-color: #293846;
+	margin-bottom: 0;
+}
+
+.brand {
+    background-color: #19aa8d;
+    color: #fff;
+    display: block;
+    font-size: 22px;
+    padding: 14px 20px 14px 25px;
+}
+
+.brand.has-image {
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    min-height: 101px;
+    justify-content: center;
+}
+
+.brand__name {
+    margin: 2px 0;
+    font-size: 22px;
+}
+
+.left-nav--closed .brand {
+    padding: 12px 0;
+    text-align: center;
+}
+
+.left-nav--closed .brand.has-image {
+    justify-content: center;
+}
+
+.left-nav--closed .brand__name {
+    display: none;
+}
+
+.menu__button {
+    display: none;
+}
+
+.left-nav--closed .menu__button {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.left-nav__disclaimer {
+    padding: 15px;
+    font-size: 13px;
+    color: #8192A2;
+}
+
+.left-nav-form {
+    margin-top: auto;
+    color: black;
+    padding: 0px 14px;
+}
+
+.left-nav-select {
+    margin-bottom: 4px;
+    border-radius: 0px;
+}
+
+.left-nav-form textarea {
+    resize: none;
+    height: 75px;
+}
+
+.left-nav-form button {
+    font-weight: 600;
+}
+
+.left-nav-form button,
+.left-nav-form select,
+.left-nav-form textarea {
+    width: 100%;
+}
+
+.left-nav-heading {
+    text-align: center;
+    font-size: 16px;
+    font-color: white;
+}
+
+span.confirmation {
+    background-color: #19aa8d;
+    padding: 2rem;
+    font-size: 14px;
+    display: none;
+}
+
+form>label {
+    color: white;
+    font-weight: 400;
+}

@@ -1,0 +1,24 @@
+.input__icon{
+	position: absolute;
+	right: 15px;
+	top: 9px;
+}
+.input__icon--with-action{
+	cursor:pointer;
+}
+.input--with-icon{
+	padding-right:35px;
+}
+// .input-group .form-control{
+// 	border-left:0;
+// 	box-shadow:none;
+// }
+/*
+**	top bar specific
+*/
+.input__group--with-icon{
+	display:inline-block;
+	width:100%;
+	vertical-align: middle;
+	position:relative;
+}

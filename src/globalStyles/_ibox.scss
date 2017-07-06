@@ -1,0 +1,67 @@
+.ibox{
+	margin-bottom:25px;
+	margin-top: 0;
+	padding: 0;
+}
+
+.ibox__title{
+	background-color: #fff;
+	border-top:3px solid #e7eaec;
+	color: inherit;
+	margin-bottom: 0;
+	min-height: 48px;
+	padding: 15px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+.ibox__heading{
+	margin: 0;
+	margin-top:5px;
+	font-weight:600;
+	color:#676a6c;
+	font-size:18px;
+}
+.ibox__tools{
+	-webkit-flex:1;
+	-ms-flex:1;
+	flex:1;
+	text-align: right;
+}
+.ibox__content{
+	background-color: #fff;
+	border-top:1px solid #e7eaec;
+	color: inherit;
+	padding: 15px 20px 20px;
+}
+.ibox__content-wide {
+  padding-left:0;
+  padding-right: 0;
+}
+
+.ibox__image__container{
+	margin-bottom:50px;
+}
+.ibox__list{
+
+}
+.ibox__list__item{
+	padding:13px 20px;
+	background-color: #f4f4f5;
+	margin-bottom:10px;
+	border:1px solid #e5e5e5;
+	border-radius:3px;
+	cursor:pointer;
+}
+.ibox__list__item.active{
+	border-left:3px solid #19aa8d;
+}
+.ibox__list__item:hover{
+	background-color: #fff;
+}
+.ibox__list__item__tools{
+	text-align: right;
+}

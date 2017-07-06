@@ -1,0 +1,28 @@
+.top-bar{
+	margin: 5px 7px 0px;
+  padding: 10px;
+	//Chrome 48 Bug fix , will not work at later stages
+	flex:none;
+}
+.top-bar--margin-right{
+	margin-right: 5px;
+}
+.top-bar__form{
+	display:inline-block;
+	vertical-align: middle;
+  margin-right:10px;
+}
+.top-bar__form--search{
+	width:220px;
+}
+.top-bar__tools{
+	margin-right:15px;
+  margin-left:auto;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.top-bar__alerts{
+	max-width:50%;
+}

@@ -1,0 +1,55 @@
+.button{
+	outline:none;
+	border:transparent;
+	padding:6px 12px;
+	display:inline-block;
+	vertical-align: middle;
+	border-radius:3px;
+	font-size:14px;
+	cursor:pointer;
+	line-height:1.42857;
+}
+.button--small{
+	line-height:1;
+}
+.button--tiny{
+	line-height:1;
+	font-size:12px;
+}
+.button--primary{
+	background-color: #19aa8d;
+	border-color:#19aa8d;
+	color:#fff;
+}
+.icon-primary{
+  color: #19aa8d;
+}
+
+.button--secondary{
+	background-color: #1c84c6;
+	border-color:#1c84c6;
+	color:#fff;
+}
+.button--warning{
+	background-color: #f8ac59;
+	border-color: #f8ac59;
+	color:#fff;
+}
+.button--alert{
+	background-color: #ed5565;
+	border-color: #ed5565;
+	color:#fff;
+}
+.button--transparent{
+	background-color:transparent;
+}
+.button:disabled{
+	background-color: #ccc;
+}
+.button--margin-left{
+	margin-left:5px;
+}
+.button--disabled{
+	color:#959595;
+	background-color: #ccc;
+}

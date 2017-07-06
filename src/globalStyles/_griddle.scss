@@ -1,0 +1,16 @@
+.griddle td{
+  word-wrap:break-word;
+}
+.griddle td > span{
+	display:inline-block;
+}
+.griddle .griddle-filter{
+	margin-bottom:1em;
+}
+
+.griddle-body{
+	overflow:auto;
+}
+.griddle table{
+	width:auto !important;
+}

@@ -1,0 +1,34 @@
+/*.user{
+	position:absolute;
+	bottom:0;
+}*/
+.user__image{
+	display:inline-block;
+	vertical-align: middle;
+	margin-right:5px;
+	padding:15px;
+}
+.user__image--full-size{
+	width:100%;
+}
+.user__image--round{
+	border-radius:50%;
+}
+.user__name{
+	display:inline-block;
+	vertical-align: middle;
+}
+.user__name--bold{
+	font-weight:bold;
+}
+.user__name__actions{
+	color:#8095a8;
+	font-size:13px;
+	font-weight:bold;
+}
+/*
+**	No idea how we do this
+*/
+.left-nav--closed .user__name{
+	display:none;
+}

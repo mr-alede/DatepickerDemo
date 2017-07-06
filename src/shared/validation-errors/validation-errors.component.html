@@ -1,0 +1,18 @@
+<span *ngIf="model | hasErrors: validate" class="text-danger">
+  <span *ngIf="model.hasError('required')">required</span>
+  <span *ngIf="model.hasError('minlength')">
+    min length {{model.errors.minlength.requiredLength}}
+  </span>
+  <span *ngIf="model.hasError('maxlength')">
+    max length {{model.errors.maxlength.requiredLength}}
+  </span>
+  <span *ngIf="model.hasError('appValidateEmail') && !model.hasError('required')">invalid email address</span>
+  <span *ngIf="model.hasError('pattern') && model.errors.length == 1">
+    invalid pattern
+  </span>
+
+  <span *ngIf="model.hasError('minError')">
+    min value {{model.errors.minError.minValue}}
+  </span>
+
+</span>

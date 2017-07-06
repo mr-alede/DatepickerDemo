@@ -1,0 +1,14 @@
+<div bsModal #modal="bs-modal" class="modal fade" tabindex="-1" role="dialog"  [config]="{backdrop: 'static'}"
+    aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-body">
+        {{message}}
+      </div>
+      <div class="modal-footer">
+          <button class="button button--primary" (click)="ok()" >OK</button>
+          <button class="button" (click)="cancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

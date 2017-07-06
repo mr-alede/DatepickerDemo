@@ -1,0 +1,63 @@
+.angular-kendo-grid {
+  /// Line height used along with $font-size.
+  $line-height: (20 / 14) !default;
+  $line-height-sm: 1.2 !default;
+  $line-height-lg: 1.5 !default;
+  $line-height-em: $line-height * 1em;
+
+  // Metrics
+  $padding-x: 8px !default;
+  $padding-y: 4px !default;
+
+  $cell-padding-x: 12px !default;
+  $cell-padding-y: 8px !default;
+  $cell-padding: 8px !default;
+
+  $form-line-height: $line-height !default;
+  $form-line-height-em: $form-line-height * 1em !default;
+
+  $button-padding-x: $padding-x !default;
+  $button-padding-y: $padding-y !default;
+  $button-padding-x-sm: $button-padding-x / 2 !default;
+  $button-padding-y-sm: $button-padding-y / 2 !default;
+  $button-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2} + 2px;
+  $button-inner-calc-size: #{$form-line-height-em} + #{$button-padding-y * 2};
+
+
+  .k-grid .k-animation-container
+  {
+      position: fixed;
+  }
+
+  // .k-filtercell {
+  //     width: auto;
+  //     display: block;
+
+  //     .k-dropdown-operator {
+  //         width: calc( #{$button-calc-size} );
+  //         flex: none;
+  //         position: absolute;
+  //         top: 0;
+  //         right: calc( #{$button-calc-size} + #{$cell-padding-y / 2} );
+  //     }
+
+  //     .k-dropdown-operator .k-input {
+  //         padding: 0;
+  //         width: 0;
+  //         overflow: hidden;
+  //         z-index: -1;
+  //     }
+  // }
+}
+
+kendo-grid {
+  kendo-grid-filter-cell-operators {
+    .k-dropdown-operator, .k-button-icon {
+      height: 25px;
+    }
+
+    .k-animation-container {
+      z-index: 1005;
+    }
+  }
+}
